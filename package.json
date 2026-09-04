@@ -1,0 +1,51 @@
+{
+  "name": "twofree-web",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "packageManager": "pnpm@11.13.1",
+  "engines": {
+    "node": "24.18.0",
+    "pnpm": "11.13.1"
+  },
+  "dependencies": {
+    "@camircode/twofree-application": "^0.1.0",
+    "@camircode/twofree-data-provider": "^0.1.0",
+    "@camircode/twofree-ui": "^0.1.0",
+    "iconoir-react": "7.11.1",
+    "next": "16.2.11",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.1",
+    "playwright": "1.61.1",
+    "prettier": "3.8.2",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.56.1",
+    "vitest": "4.1.0"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "dev:legacy": "tsx watch src/server.ts",
+    "start": "next start",
+    "start:legacy": "tsx src/server.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:browser": "vitest run --config vitest.browser.config.ts",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
+  }
+}

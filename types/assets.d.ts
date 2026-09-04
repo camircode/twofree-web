@@ -1,0 +1,10 @@
+declare module "@camircode/twofree-ui/assets/2free-con-fondi.svg" {
+  const content: {
+    src: string;
+    height: number;
+    width: number;
+    blurDataURL?: string;
+  };
+
+  export default content;
+}

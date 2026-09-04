@@ -1,0 +1,11 @@
+# Exceptions to the HIGH/CRITICAL gate in the Scan stage.
+#
+# Each entry needs three things: the id, why the vulnerability is not reachable
+# from this image, and a date it stops applying. Without the date an exception
+# outlives the reason for it, and the file quietly becomes a way to make the
+# scanner agree with whatever shipped.
+#
+# The pipeline already passes --ignore-unfixed, so nothing without a fix
+# available needs an entry here.
+
+vulnerabilities: []

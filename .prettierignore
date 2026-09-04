@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.next-test-*/
+coverage/
+pnpm-lock.yaml
+*.ico
+*.png
+*.svg

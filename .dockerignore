@@ -1,0 +1,20 @@
+# Everything the build does not read. Keeping the context small is not only
+# about speed: .env and node_modules in the context are a credential and a
+# host-built binary tree one careless COPY away from the image.
+.git
+.github
+node_modules
+.next
+.next-test-*
+artifacts
+coverage
+test
+vendor
+*.log
+.env
+.env.*
+!.env.example
+Dockerfile
+Jenkinsfile
+README.md
+.trivyignore.yaml

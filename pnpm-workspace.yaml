@@ -1,0 +1,10 @@
+# pnpm 11 reads its settings here rather than from .npmrc.
+
+# sharp is left unbuilt on purpose: it is Next's optional image optimiser, this
+# application ships one SVG logo, and building it means pulling a prebuilt
+# libvips per platform into every image build for nothing.
+allowBuilds:
+  esbuild: true
+  sharp: false
+
+autoInstallPeers: false

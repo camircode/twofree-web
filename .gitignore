@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.next-test-*/
+coverage/
+artifacts/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+!.env.example
+metadata.json
+
+# Local verification only: tarballs packed out of the shared-packages checkout
+# while the @camircode packages are unpublished. Never part of a build.
+vendor/
