@@ -12,14 +12,14 @@ importers:
   .:
     dependencies:
       '@camircode/twofree-application':
-        specifier: ^0.1.0
-        version: 0.1.0(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))
+        specifier: ^0.1.1
+        version: 0.1.1(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))
       '@camircode/twofree-data-provider':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
       '@camircode/twofree-ui':
-        specifier: ^0.1.0
-        version: 0.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^0.1.1
+        version: 0.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       iconoir-react:
         specifier: 7.11.1
         version: 7.11.1(react@19.2.7)
@@ -161,23 +161,23 @@ packages:
   '@better-fetch/fetch@1.3.1':
     resolution: {integrity: sha512-ABkD1WhyfPZprKRQI3bhATjeiFuNWC9PXhfGWqL+sg/gKrM977oFrYkdb4msM3hgUGonr7KlOsOFT5TU2rht9g==}
 
-  '@camircode/twofree-application@0.1.0':
-    resolution: {integrity: sha512-kgfzZREvGnePM8Y5EZybH3CKRyHtlr5gFIro2Ylnbg0gQGRsdfLCZ2PCvemQZB5LEIu4ZdLk+vG1x8pEGqmgMg==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-application/0.1.0/a4e11e0a6e518ee34bed3e331a7b7fbbcf88ec6f}
+  '@camircode/twofree-application@0.1.1':
+    resolution: {integrity: sha512-BLkS0PMa3ZneEhGUJ11MP6E+LuFxRQ9Nzb9bBHIuKSGwrgQDFsq2KDbmjwj+Iyk2iHTrD6/ztMAAHWpok4Vgsw==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-application/0.1.1/6c4850775f535235aa577910db593c1c88c9c2e2}
 
-  '@camircode/twofree-auth@0.1.0':
-    resolution: {integrity: sha512-7zDZVF4LQI0J8SWqJLj2+Jf6Dj2C/Qi+xbAESLfaE0JFUYiS6ei3k2Ul+MW6ULr3yxwRzFrd6vSiRqCIEuJTSg==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-auth/0.1.0/4ca7f02219281292bd880e9f21a4e42527b777bb}
+  '@camircode/twofree-auth@0.1.1':
+    resolution: {integrity: sha512-0mSOiKpvoKrJ9UO5olbjRkyx1iRIZcfKIv6SjaU5Q+iVCr5fvJkworhG1hWNAGmK8Ik4e1XLF8KFXwfbeEAqTg==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-auth/0.1.1/ea1e55d4566a579e2833a419c15b0f80cef45f8e}
 
-  '@camircode/twofree-core@0.1.0':
-    resolution: {integrity: sha512-oeD+5GHc0S/jmKSJ4++rd264PAl5WHBgi2KMtbcSjDvqBk4CqqTfchc6glaF9G1iYJW8NHL2dsuygx28Tq3JyA==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-core/0.1.0/fea7158435ae16738efe77ae65c4ca2d0754c785}
+  '@camircode/twofree-core@0.1.1':
+    resolution: {integrity: sha512-OsxmF8tc0julzcUBVqo9rkkhOIW/U1nQo+PHL7Qm0ssS49SNAF8Bn3vngCQx3fBPg+AEu2ES2e632xKcdc/jBA==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-core/0.1.1/34da7580a042f1c53492bf6affc42765337c3299}
 
-  '@camircode/twofree-data-provider@0.1.0':
-    resolution: {integrity: sha512-ObTHq4wm53YZub0fXGZ6xpAmK+qfy1a119Q8jMfg7UxYfGkIUdClPaSA1ydEoqamJqq5ldBY34dXdCqRhkxoRQ==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-data-provider/0.1.0/850b5549c64cf6cdf2733ebee06688a4ebee844e}
+  '@camircode/twofree-data-provider@0.1.1':
+    resolution: {integrity: sha512-jSCmKdNXMSfcqd+XiIYM38kuNIJ5eX4sP5iB98YGBhNGpquwyPDcWT1chKd/ru700pSHNOnNPbBxbMQCkozn5A==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-data-provider/0.1.1/aaf7baa35cf2a41610f0f1594282296e722e48e3}
 
-  '@camircode/twofree-database@0.1.0':
-    resolution: {integrity: sha512-hAGY2I1jEljK03iAv3GV5+8nwEm77+BN1WByG2iTg7QGihwQDX0Jh2dfzjiTZPvZWzTxAYLIL1I+j39Ab1R1vQ==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-database/0.1.0/ac9938ce579ab7ca3f89e23967334dd6c2afcb7f}
+  '@camircode/twofree-database@0.1.1':
+    resolution: {integrity: sha512-/D+ML+9jpVgQk4GywSmuyiGB4lCnPqrTmBur8CxKBCBKWONPvI5l1uMa+i6imDX/kc/y8OE8on7glZVqM41obA==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-database/0.1.1/8b40ace0e57c06eb1fbed45914267db4056c2f75}
 
-  '@camircode/twofree-ui@0.1.0':
-    resolution: {integrity: sha512-czGjYRVIfh5N1b+yZzt4gGuX2LnJG5ewn/Mzo508+XPraTVshuehbjdE5D0fivZoisIxRqIiF7MX8GVN46rEmw==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-ui/0.1.0/075e81224227975a2c6b5389b57b7cd66f6366b1}
+  '@camircode/twofree-ui@0.1.1':
+    resolution: {integrity: sha512-ffGI4w+9CoezVJJ+/AFzVGFJU3LNfG2vNy+qMJSMDW3rcQk0r/S0EwPrczfQBir8A/jfC8Ljf8SFqEAnJSkpyg==, tarball: https://npm.pkg.github.com/download/@camircode/twofree-ui/0.1.1/cd5eebcf08190b7b8d44016616a23a649ac70244}
     peerDependencies:
       react: ^19.2.0
       react-dom: ^19.2.0
@@ -2033,11 +2033,11 @@ snapshots:
 
   '@better-fetch/fetch@1.3.1': {}
 
-  '@camircode/twofree-application@0.1.0(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))':
+  '@camircode/twofree-application@0.1.1(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))':
     dependencies:
-      '@camircode/twofree-auth': 0.1.0(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))
-      '@camircode/twofree-core': 0.1.0
-      '@camircode/twofree-data-provider': 0.1.0
+      '@camircode/twofree-auth': 0.1.1(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))
+      '@camircode/twofree-core': 0.1.1
+      '@camircode/twofree-data-provider': 0.1.1
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
       - '@lynx-js/react'
@@ -2063,9 +2063,9 @@ snapshots:
       - vitest
       - vue
 
-  '@camircode/twofree-auth@0.1.0(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))':
+  '@camircode/twofree-auth@0.1.1(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))':
     dependencies:
-      '@camircode/twofree-database': 0.1.0(typescript@5.9.3)
+      '@camircode/twofree-database': 0.1.1(typescript@5.9.3)
       better-auth: 1.6.23(@prisma/client@7.9.0(typescript@5.9.3))(next@16.2.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(pg@8.23.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vitest@4.1.0(@types/node@24.10.1)(jiti@2.7.0)(tsx@4.20.6))
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
@@ -2092,21 +2092,21 @@ snapshots:
       - vitest
       - vue
 
-  '@camircode/twofree-core@0.1.0':
+  '@camircode/twofree-core@0.1.1':
     dependencies:
       decimal.js: 10.6.0
 
-  '@camircode/twofree-data-provider@0.1.0':
+  '@camircode/twofree-data-provider@0.1.1':
     dependencies:
-      '@camircode/twofree-core': 0.1.0
+      '@camircode/twofree-core': 0.1.1
       pg: 8.23.0
     transitivePeerDependencies:
       - pg-native
 
-  '@camircode/twofree-database@0.1.0(typescript@5.9.3)':
+  '@camircode/twofree-database@0.1.1(typescript@5.9.3)':
     dependencies:
-      '@camircode/twofree-core': 0.1.0
-      '@camircode/twofree-data-provider': 0.1.0
+      '@camircode/twofree-core': 0.1.1
+      '@camircode/twofree-data-provider': 0.1.1
       '@prisma/adapter-pg': 7.9.0
       '@prisma/client': 7.9.0(typescript@5.9.3)
       pg: 8.23.0
@@ -2115,9 +2115,9 @@ snapshots:
       - prisma
       - typescript
 
-  '@camircode/twofree-ui@0.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@camircode/twofree-ui@0.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@camircode/twofree-core': 0.1.0
+      '@camircode/twofree-core': 0.1.1
       '@fontsource-variable/open-sans': 5.3.0
       '@fontsource-variable/urbanist': 5.3.0
       '@gsap/react': 2.1.2(gsap@3.15.0)(react@19.2.7)

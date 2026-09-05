@@ -10,9 +10,9 @@
     "pnpm": "11.13.1"
   },
   "dependencies": {
-    "@camircode/twofree-application": "^0.1.0",
-    "@camircode/twofree-data-provider": "^0.1.0",
-    "@camircode/twofree-ui": "^0.1.0",
+    "@camircode/twofree-application": "^0.1.1",
+    "@camircode/twofree-data-provider": "^0.1.1",
+    "@camircode/twofree-ui": "^0.1.1",
     "iconoir-react": "7.11.1",
     "next": "16.2.11",
     "react": "19.2.7",

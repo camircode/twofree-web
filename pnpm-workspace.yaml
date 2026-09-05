@@ -9,13 +9,13 @@ allowBuilds:
 
 autoInstallPeers: false
 
+# A wildcard, not a list of exact versions. The shared packages are published
+# from this project minutes before a consumer installs them, so the release-age
+# policy would reject every one of them; pinning the versions here means editing
+# this file on every release, and forgetting to is a build that fails on its own
+# dependency for a reason nobody remembers.
 minimumReleaseAgeExclude:
-  - '@camircode/twofree-application@0.1.0'
-  - '@camircode/twofree-auth@0.1.0'
-  - '@camircode/twofree-core@0.1.0'
-  - '@camircode/twofree-data-provider@0.1.0'
-  - '@camircode/twofree-database@0.1.0'
-  - '@camircode/twofree-ui@0.1.0'
+  - "@camircode/*"
 
 # sharp is pinned past a published fix. It is Next's optional image optimiser and
 # ships inside the standalone output, so the scan sees it in the image even
