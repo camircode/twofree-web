@@ -46,6 +46,14 @@ RUN pnpm build
 # --- the image that runs ------------------------------------------------------
 FROM node:24-alpine AS runtime
 
+# The base image's tag is rebuilt on Node releases, not on Alpine security
+# updates, so its package tree is as old as the last Node release. Trivy runs
+# with --ignore-unfixed and fails the build on HIGH or CRITICAL, so anything it
+# reports already has a patch waiting in the Alpine repositories. Taking those
+# patches here is the fix; writing an exception for an already-fixed
+# vulnerability is not.
+RUN apk upgrade --no-cache
+
 ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
     PORT=8080 \
