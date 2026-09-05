@@ -8,3 +8,11 @@ allowBuilds:
   sharp: false
 
 autoInstallPeers: false
+
+minimumReleaseAgeExclude:
+  - '@camircode/twofree-application@0.1.0'
+  - '@camircode/twofree-auth@0.1.0'
+  - '@camircode/twofree-core@0.1.0'
+  - '@camircode/twofree-data-provider@0.1.0'
+  - '@camircode/twofree-database@0.1.0'
+  - '@camircode/twofree-ui@0.1.0'
