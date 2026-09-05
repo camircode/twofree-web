@@ -16,3 +16,10 @@ minimumReleaseAgeExclude:
   - '@camircode/twofree-data-provider@0.1.0'
   - '@camircode/twofree-database@0.1.0'
   - '@camircode/twofree-ui@0.1.0'
+
+# sharp is pinned past a published fix. It is Next's optional image optimiser and
+# ships inside the standalone output, so the scan sees it in the image even
+# though nothing here calls it. Trivy fails the build on HIGH or CRITICAL with a
+# fix available, and this one has it.
+overrides:
+  sharp: 0.35.0

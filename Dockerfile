@@ -54,6 +54,21 @@ FROM node:24-alpine AS runtime
 # vulnerability is not.
 RUN apk upgrade --no-cache
 
+# The base image ships npm, corepack and yarn. Next's standalone server starts
+# with plain `node` and needs none of them, and a package manager in a runtime
+# image is the build toolchain this project's standard says must not reach the
+# final layer.
+#
+# It is also where the scan's findings were coming from: brace-expansion,
+# ip-address and tar are vendored inside npm's own node_modules, not resolved
+# from this lockfile, so no pnpm override could ever have reached them. Deleting
+# npm removes the vulnerabilities and the reason they were there.
+RUN rm -rf /usr/local/lib/node_modules/npm \
+           /usr/local/lib/node_modules/corepack \
+           /opt/yarn-* \
+           /usr/local/bin/npm /usr/local/bin/npx \
+           /usr/local/bin/corepack /usr/local/bin/yarn /usr/local/bin/yarnpkg
+
 ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
     PORT=8080 \
