@@ -23,10 +23,22 @@ describe("Next foundation contract", () => {
     const devDependencies = packageJson.devDependencies as Record<string, string>;
     const scripts = packageJson.scripts as Record<string, string>;
 
+    // The shared packages are checked by shape, not by exact version. What
+    // matters is that they come from the registry as a published range — a
+    // `workspace:*` here would mean this repository had quietly gone back to
+    // resolving them from a checkout that CI does not have. Asserting the patch
+    // version adds nothing to that and breaks this test on every release, which
+    // is a build failure that teaches people to edit the test rather than read
+    // it.
+    for (const name of [
+      "@camircode/twofree-application",
+      "@camircode/twofree-data-provider",
+      "@camircode/twofree-ui",
+    ]) {
+      expect(dependencies[name]).toMatch(/^\^\d+\.\d+\.\d+$/u);
+    }
+
     expect(dependencies).toMatchObject({
-      "@camircode/twofree-application": "^0.1.0",
-      "@camircode/twofree-data-provider": "^0.1.0",
-      "@camircode/twofree-ui": "^0.1.0",
       next: "16.2.11",
       react: "19.2.7",
       "react-dom": "19.2.7",
