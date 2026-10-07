@@ -53,7 +53,7 @@ up as a parse error in a browser somewhere far from the cause.
 
 ## Deployment
 
-Jenkins builds the image, pushes it to `ghcr.io/camircode/twofree-web` by
+GitHub Actions builds the image, pushes it to `ghcr.io/camircode/twofree-web` by
 digest, smoke-tests that digest as uid 10001 with a read-only root filesystem,
 scans it, and commits the digest to `camircode/gitops`. Argo CD reconciles the
 cluster from that repository.

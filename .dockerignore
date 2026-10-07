@@ -15,6 +15,6 @@ vendor
 .env.*
 !.env.example
 Dockerfile
-Jenkinsfile
+.github
 README.md
 .trivyignore.yaml

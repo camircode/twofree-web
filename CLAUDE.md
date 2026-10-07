@@ -13,8 +13,7 @@ the rules below exist.
 
 ## 1. How a change reaches the cluster
 
-Commit to `main` → **Jenkins polls every five minutes** (a webhook is impossible:
-the controller is only reachable over WireGuard, so GitHub cannot call it) →
+Push to `main` → **GitHub Actions** (`.github/workflows/ci.yml`) →
 lint/typecheck/test in a container → `docker buildx` push to GHCR **by digest** →
 smoke-test that digest → Trivy (HIGH/CRITICAL, `--ignore-unfixed`) → commit the
 digest into `manifests/twofree-web/deployment.yaml` in `camircode/gitops` → Argo
@@ -50,7 +49,7 @@ the source, not the image.
 
 A change to `@camircode/twofree-*` must be versioned and published from
 `twofree-packages` *before* the bump here can install. Bumping to an unpublished
-version fails in the `deps` stage of the Docker build, minutes into a Jenkins
+version fails in the `deps` stage of the Docker build, minutes into a CI
 run, as a resolver error about a tarball.
 
 ## 3. There is no committed lockfile — and the build already demands one
@@ -58,7 +57,7 @@ run, as a resolver error about a tarball.
 `pnpm-lock.yaml` is absent, because it cannot be resolved until the `@camircode`
 packages exist in the registry. But the `Dockerfile` already does
 `COPY package.json pnpm-lock.yaml ...` and `pnpm install --frozen-lockfile`, and
-the `Jenkinsfile` `Test` stage does the same. **The image build cannot succeed
+the `Test` step of `.github/workflows/ci.yml` does the same. **The image build cannot succeed
 until the lockfile exists.**
 
 So: the first `pnpm install` against the published packages must **commit
